@@ -83,10 +83,10 @@ QUnit.module('A ellenorzes() függvények ellenőrzése', function () {
     QUnit.test('függvénye?', function (assert) {
         assert.ok(typeof ellenorzes === "function", "igen, fv");
     });
-    QUnit.test('ellenőrzés true', function (assert) {
+    QUnit.test('ellenőrzés van-e győztes', function (assert) {
         assert.equal(ellenorzes(), true);
     });
-    QUnit.test('ellenorzes false?', function (assert) {
+    QUnit.test('ellenorzes nincs-e győztes?', function (assert) {
         assert.equal(ellenorzes(), false);
     });
 });
